@@ -18,9 +18,10 @@ const Order: React.FC<OrderProps> = ({ pageId }) => {
   const { loading: loadingDeliver } = useTypedSelector(
     state => state.orderDeliver
   );
+console.log("data" , data)
+
   const user = useTypedSelector(state => state.user);
   const { fetchOrder, payOrder, deliverOrder } = useOrderActions();
-
   useEffect(() => {
     if (!data._id || success) {
       if (!pageId) return;

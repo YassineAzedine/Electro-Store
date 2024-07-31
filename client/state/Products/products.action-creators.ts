@@ -23,8 +23,8 @@ export const fetchProducts =
       });
     } catch (error: any) {
       dispatch({
-        type: ActionTypes.FETCH_PRODUCTS_ERROR,
-        payload: error.response.data.message,
+        type: ActionTypes?.FETCH_PRODUCTS_ERROR,
+        payload: error.response?.data.message,
       });
     }
   };
@@ -45,7 +45,7 @@ export const fetchTopRatedProducts =
     } catch (error: any) {
       dispatch({
         type: ActionTypes.FETCH_TOP_PRODUCTS_ERROR,
-        payload: error.response.data.message,
+        payload: error.response?.data.message,
       });
     }
   };

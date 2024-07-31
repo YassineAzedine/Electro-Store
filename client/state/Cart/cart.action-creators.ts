@@ -110,7 +110,7 @@ export const getCart = () => async (dispatch: Dispatch<CartAction>) => {
   } catch (error: any) {
     dispatch({
       type: ActionTypes.GET_CART_ERROR,
-      payload: error.response.data.message,
+      payload: error.response?.data.message,
     });
   }
 };

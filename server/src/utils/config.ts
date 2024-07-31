@@ -9,7 +9,7 @@ export const connectDB = (
   const dbPassword = configService.get<string>('MONGODB_PASSWORD');
   const dbName = configService.get<string>('MONGODB_DATABASE_NAME');
 
-  const mongodbUri = `mongodb+srv://achrafdev:${dbPassword}@proshop.rbkt6.mongodb.net/${dbName}?retryWrites=true&w=majority`;
+  const mongodbUri = `mongodb+srv://webw23346:yassine0711@cluster0.yyfuyex.mongodb.net/ecommercedb?retryWrites=true&w=majority&appName=Cluster0`;
 
   return {
     uri: mongodbUri,
