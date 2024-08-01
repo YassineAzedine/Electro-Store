@@ -164,13 +164,13 @@ console.log("data" , data)
                 <ListGroup.Item>
                   {loading && <Loader />}
 
-                  <PayPalButton
+                  {/* <PayPalButton
                     options={{
                       clientId: paypalClientId,
                     }}
                     amount={data.totalPrice}
                     onSuccess={onPaymentHandler}
-                  />
+                  /> */}
                 </ListGroup.Item>
               )}
               {loadingDeliver && <Loader />}

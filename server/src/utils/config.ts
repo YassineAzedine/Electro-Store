@@ -18,13 +18,13 @@ export const connectDB = (
 };
 
 export const corsConfig = (): CorsOptions => ({
-  origin: process.env.CLIENT_URL,
+  origin: process.env.CLIENT_URL || "http://localhost:3000",
   methods: 'GET, POST, OPTIONS, PUT, PATCH, DELETE',
   credentials: true,
 });
 
 export const sessionConfig = (MongoDBStore: any): SessionOptions => ({
-  secret: process.env.SESSION_KEY,
+  secret: process.env.SESSION_KEY || "SESSION_KEY",
   resave: false,
   saveUninitialized: false,
   cookie:

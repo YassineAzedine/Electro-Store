@@ -20,7 +20,7 @@ import { UsersController } from './controller/users.controller';
     ]),
     PassportModule,
     JwtModule.register({
-      secret: process.env.JWT_SECRET,
+      secret: process.env.JWT_SECRET || "e2f6c8b7c9a1b2d4e5f6a7b8c9d1e2f3a4b5c6d7e8f9a1b2c3d4e5f6a7b8c9d1",
       signOptions: { expiresIn: '1d' },
     }),
   ],

@@ -1,10 +1,10 @@
-# Elecshop - eCommerce app w/ Next.js, Nest.js and MongoDB
+# Eletro Store - eCommerce app w/ Next.js, Nest.js and MongoDB
 
-![Elecshop preview image](./client/public/design/preview.png)
+![Eletro Store preview image](./client/public/design/preview.png)
 
 ## The Challenge ⚡️
 
-I wanted to build another eCommerce website using newer technologies than my [previous eCommerce project](https://github.com/NightClover-code/basic-eCommerce-website), where I used `Firebase` to store data and `Redux` for state management.
+I wanted to build another eCommerce website using newer technologies than my [previous eCommerce project](https://github.com/YassineAzedine/Electro-Store.git), where I used `mongodb` to store data and `Redux` for state management.
 
 I went with a `client-server` approach, and this time I mixed two frameworks for the first time, which were `Next.js` and `Nest.js`.
 
@@ -34,13 +34,13 @@ Here was the challenge:
 Clone the project
 
 ```bash
-git clone https://github.com/NightClover-code/modern-ecommerce.git
+git clone https://github.com/YassineAzedine/Electro-Store.git
 ```
 
 Go to the project directory
 
 ```bash
-cd modern-ecommerce
+cd Electro-Store
 ```
 
 Remove remote origin
@@ -99,7 +99,7 @@ yarn dev
 
 ## Deployment 🚀
  - Client deployed on [Vercel](https://vercel.com/)
- - Server deployed on [Railway](https://railway.app/)
+ - Server deployed on [Render](https://render.com/)
  
  
 ## Inspiration & credits ☄️
@@ -107,7 +107,7 @@ yarn dev
  - [@satnaing](https://github.com/satnaing) - README format
 
 ## Author
-- [@achrafdev](https://achrafdev.com)
+<!-- - [@achrafdev](https://achrafdev.com) -->
 
 **Thanks for sharing** 🚀
 

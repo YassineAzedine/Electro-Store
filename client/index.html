@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Backend</title>
+</head>
+<body>
+    <h1>Test Backend</h1>
+    <button id="testBtn">Test Backend</button>
+    <pre id="output"></pre>
+
+    <script>
+        document.getElementById('testBtn').addEventListener('click', () => {
+            fetch('https://backend-elecrostore-1.onrender.com/products')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    document.getElementById('output').textContent = `Error: ${error}`;
+                });
+        });
+    </script>
+</body>
+</html>

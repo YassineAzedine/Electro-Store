@@ -23,7 +23,7 @@ const SEO: React.FC<SEOProps> = ({ title, description, keywords }) => {
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
       {keywords && <meta name="keywords" content={keywords} />}
 
-      <meta name="author" content="Achraf Dev" />
+      <meta name="author" content="Yassine Azedine" />
     </Head>
   );
 };
